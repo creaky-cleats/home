@@ -136,6 +136,29 @@ h3 { margin-bottom: 0.25rem; }
 .kv dt { font-weight: 700; margin-top: 0.75rem; }
 .kv dd { margin: 0 0 0.25rem; color: var(--muted); }
 
+/* Schedule table */
+.schedule {
+  width: 100%;
+  border-collapse: collapse;
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  overflow: hidden;
+}
+.schedule th, .schedule td {
+  text-align: left;
+  padding: 0.6rem 0.9rem;
+  border-bottom: 1px solid var(--line);
+}
+.schedule thead th {
+  background: var(--field-dark);
+  color: var(--cream);
+  font-size: 0.9rem;
+  letter-spacing: 0.02em;
+}
+.schedule tbody tr:last-child td { border-bottom: none; }
+.schedule tbody tr:nth-child(even) { background: #f6f2e6; }
+
 /* Diagrams / figures */
 .diagram { margin: 1rem 0; }
 .diagram img {
